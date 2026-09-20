@@ -1,0 +1,21 @@
+[en]
+SW_SHOP_TITLE = Snow Wars
+SW_ITEM_SLINGSHOT = Slingshot
+SW_ITEM_HOTDRINK = Hot Drink
+SW_ITEM_LEMONJUICE = Lemon Juice
+SW_ITEM_DOWNJACKET = Down Jacket
+SW_ITEM_SHIELD = Shield
+SW_ITEM_SNOWMAN = Snowman
+SW_ITEM_FIREPLACE = Fireplace
+SW_ITEM_SURPRISEBOX = Surprise Box
+
+[ru]
+SW_SHOP_TITLE = Снежки
+SW_ITEM_SLINGSHOT = Рогатка
+SW_ITEM_HOTDRINK = Горячий напиток
+SW_ITEM_LEMONJUICE = Лимонный сок
+SW_ITEM_DOWNJACKET = Пуховик
+SW_ITEM_SHIELD = Щит
+SW_ITEM_SNOWMAN = Снеговик
+SW_ITEM_FIREPLACE = Костёр
+SW_ITEM_SURPRISEBOX = Подарок
