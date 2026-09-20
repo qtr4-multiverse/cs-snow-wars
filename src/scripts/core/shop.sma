@@ -20,11 +20,12 @@ public plugin_init() {
   register_clcmd("buyequip", "Command_Buy");
 
   Shop_Register(SW_Shop);
+  Shop_SetTitle(SW_Shop, "SW_SHOP_TITLE", true);
   Shop_SetGuardCallback(SW_Shop, "Callback_Shop_Guard");
 
   if (CW_IsClassRegistered(WEAPON(Slingshot))) {
     Shop_Item_Register(SHOP_ITEM(Slingshot));
-    Shop_Item_SetTitle(SHOP_ITEM(Slingshot), "Slingshot");
+    Shop_Item_SetTitle(SHOP_ITEM(Slingshot), "SW_ITEM_SLINGSHOT", true);
     Shop_Item_SetPurchaseCallback(SHOP_ITEM(Slingshot), "Callback_Shop_Item_Purchase_Slingshot");
     Shop_Item_SetGuardCallback(SHOP_ITEM(Slingshot), "Callback_Shop_Item_Guard_Slingshot");
     Shop_AddItem(SW_Shop, SHOP_ITEM(Slingshot), 4500);
@@ -32,7 +33,7 @@ public plugin_init() {
 
   if (CW_IsClassRegistered(WEAPON(HotDrink))) {
     Shop_Item_Register(SHOP_ITEM(HotDrink));
-    Shop_Item_SetTitle(SHOP_ITEM(HotDrink), "Hot Drink");
+    Shop_Item_SetTitle(SHOP_ITEM(HotDrink), "SW_ITEM_HOTDRINK", true);
     Shop_Item_SetPurchaseCallback(SHOP_ITEM(HotDrink), "Callback_Shop_Item_Purchase_HotDrink");
     Shop_Item_SetGuardCallback(SHOP_ITEM(HotDrink), "Callback_Shop_Item_Guard_HotDrink");
     Shop_AddItem(SW_Shop, SHOP_ITEM(HotDrink), 3500);
@@ -40,7 +41,7 @@ public plugin_init() {
 
   if (SW_PlayerArtifact_IsRegistered(ARTIFACT(LemonJuice))) {
     Shop_Item_Register(SHOP_ITEM(LemonJuice));
-    Shop_Item_SetTitle(SHOP_ITEM(LemonJuice), "Lemon Juice");
+    Shop_Item_SetTitle(SHOP_ITEM(LemonJuice), "SW_ITEM_LEMONJUICE", true);
     Shop_Item_SetPurchaseCallback(SHOP_ITEM(LemonJuice), "Callback_Shop_Item_Purchase_LemonJuice");
     Shop_Item_SetGuardCallback(SHOP_ITEM(LemonJuice), "Callback_Shop_Item_Guard_LemonJuice");
     Shop_AddItem(SW_Shop, SHOP_ITEM(LemonJuice), 2500);
@@ -48,7 +49,7 @@ public plugin_init() {
 
   if (SW_PlayerArtifact_IsRegistered(ARTIFACT(Downjacket))) {
     Shop_Item_Register(SHOP_ITEM(DownJacket));
-    Shop_Item_SetTitle(SHOP_ITEM(DownJacket), "Down Jacket");
+    Shop_Item_SetTitle(SHOP_ITEM(DownJacket), "SW_ITEM_DOWNJACKET", true);
     Shop_Item_SetPurchaseCallback(SHOP_ITEM(DownJacket), "Callback_Shop_Item_Purchase_DownJacket");
     Shop_Item_SetGuardCallback(SHOP_ITEM(DownJacket), "Callback_Shop_Item_Guard_DownJacket");
     Shop_AddItem(SW_Shop, SHOP_ITEM(DownJacket), 3100);
@@ -56,7 +57,7 @@ public plugin_init() {
 
   if (CW_IsClassRegistered(WEAPON(Shield))) {
     Shop_Item_Register(SHOP_ITEM(Shield));
-    Shop_Item_SetTitle(SHOP_ITEM(Shield), "Shield");
+    Shop_Item_SetTitle(SHOP_ITEM(Shield), "SW_ITEM_SHIELD", true);
     Shop_Item_SetPurchaseCallback(SHOP_ITEM(Shield), "Callback_Shop_Item_Purchase_Shield");
     Shop_Item_SetGuardCallback(SHOP_ITEM(Shield), "Callback_Shop_Item_Guard_Shield");
     Shop_AddItem(SW_Shop, SHOP_ITEM(Shield), 5000);
@@ -64,7 +65,7 @@ public plugin_init() {
 
   if (CW_IsClassRegistered(WEAPON(Snowman))) {
     Shop_Item_Register(SHOP_ITEM(Snowman));
-    Shop_Item_SetTitle(SHOP_ITEM(Snowman), "Snowman");
+    Shop_Item_SetTitle(SHOP_ITEM(Snowman), "SW_ITEM_SNOWMAN", true);
     Shop_Item_SetPurchaseCallback(SHOP_ITEM(Snowman), "Callback_Shop_Item_Purchase_Snowman");
     Shop_Item_SetGuardCallback(SHOP_ITEM(Snowman), "Callback_Shop_Item_Guard_Snowman");
     Shop_AddItem(SW_Shop, SHOP_ITEM(Snowman), 5000);
@@ -72,7 +73,7 @@ public plugin_init() {
 
   if (CW_IsClassRegistered(WEAPON(Fireplace))) {
     Shop_Item_Register(SHOP_ITEM(Fireplace));
-    Shop_Item_SetTitle(SHOP_ITEM(Fireplace), "Fireplace");
+    Shop_Item_SetTitle(SHOP_ITEM(Fireplace), "SW_ITEM_FIREPLACE", true);
     Shop_Item_SetPurchaseCallback(SHOP_ITEM(Fireplace), "Callback_Shop_Item_Purchase_Fireplace");
     Shop_Item_SetGuardCallback(SHOP_ITEM(Fireplace), "Callback_Shop_Item_Guard_Fireplace");
     Shop_AddItem(SW_Shop, SHOP_ITEM(Fireplace), 6000);
@@ -80,7 +81,7 @@ public plugin_init() {
 
   if (CW_IsClassRegistered(WEAPON(FireworksBox))) {
     Shop_Item_Register(SHOP_ITEM(SurpriseBox));
-    Shop_Item_SetTitle(SHOP_ITEM(SurpriseBox), "Surprise Box");
+    Shop_Item_SetTitle(SHOP_ITEM(SurpriseBox), "SW_ITEM_SURPRISEBOX", true);
     Shop_Item_SetPurchaseCallback(SHOP_ITEM(SurpriseBox), "Callback_Shop_Item_Purchase_SurpriseBox");
     Shop_Item_SetGuardCallback(SHOP_ITEM(SurpriseBox), "Callback_Shop_Item_Guard_SurpriseBox");
     Shop_AddItem(SW_Shop, SHOP_ITEM(SurpriseBox), 8500);
